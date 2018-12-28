@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>2018 Canada Required Training course</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+    <link href="lib.css" rel="stylesheet">
+    <link href="app.css" rel="stylesheet">
+    <script src="modernizr.js"></script>
+
+  </head>
+  <body ng-app="gpmobile" ng-controller="AppCtrl" iframe-child>
+    <div ng-class="{background : true, inchapter : zoomBackground()}"></div>
+    <alert ng-show="state.showAlert"></alert>
+    <!-- <splash ng-show="settings.showSplash"></splash>-->
+    <!-- <splash-audio ng-show="settings.showSplash"></splash-audio>-->
+    <splash-choose-branch ng-show="settings.showSplash"></splash-choose-branch>
+    <!--splash-choose-Path ng-show="settings.showSplash"></splash-choose-Path-->
+    <menu-top ></menu-top>
+    <div class="content-holder" ng-view="" ></div>
+    <script src="lib.js"></script>
+    <script src="templates.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
